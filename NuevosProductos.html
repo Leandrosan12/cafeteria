@@ -19,7 +19,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Casa</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="">Casa</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -29,6 +29,13 @@
                             </ul>
                         </li>
                     </ul>
+                    <form class="d-flex">
+                        <a href="carrito.html" class="btn btn-outline-dark">
+                            <i class="bi-cart-fill me-1"></i>
+                            carrito
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                          </a>
+                    </form>
                 </div>
             </div>
         </nav>
@@ -37,23 +44,23 @@
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
                 </div>
-                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                      <div class="carousel-item active">
-                    <center><img src="img/snaks.jpeg" alt="centered image" height="300" width="1000"></center>
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="img/cafetera.jpg" class="d-block w-100" alt="..." height="300" width="1000">>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/donas.jpg" class="d-block w-100" alt="..." height="300" width="1000">>
                       </div>
                       <div class="carousel-item">
-                        <center><img src="img/rollitos.jpeg" alt="centered image" height="300" width="1000"></center>
-                      </div>
-                      <div class="carousel-item">
-                        <center><img src="img/sushi.jpeg" alt="centered image" height="300" width="1000"></center>
+                        <img src="img/pastel.jpg" class="d-block w-100" alt="..." height="300" width="1000">>
                       </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
