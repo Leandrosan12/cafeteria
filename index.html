@@ -80,21 +80,24 @@
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                     <div class="col mb-5">
                         <div class="card h-100">
-                            <!-- Product image-->
+                           
                             <img class="card-img-top" src="img/cafetera.jpg" alt="..." />
-                            <!-- Product details-->
+                           
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <!-- Product name-->
+                                  
                                     <h5 class="fw-bolder">Cafetera</h5>
-                                    <!-- Product price-->
+                                 
                                     $50.000 - $60.000
                                 </div>
                             </div>
-                            <!-- Product actions-->
+                          
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Carrito</a></div>
+                                <div class="text-center">
+                                    <button class="btn btn-outline-dark mt-auto" data-id="1" onclick="añadirAlCarrito()" >Carrito</button>
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
                     <div class="col mb-5">
@@ -284,6 +287,33 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script>
+
+
+            function añadirAlCarrito(idProducto) {
+    
+                let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+                console.log("carrito: ",carrito)
+                
+                let productoExistente = carrito.find(p => p.id === idProducto);
+                if (productoExistente!=undefined) {
+                productoExistente.cantidad++;
+                } else {
+                let producto = {
+                id: idProducto,
+                nombre: 'Cafetera',
+                precio: 50000,
+                imagen: 'img/cafetera.jpg'
+                };
+                producto.cantidad = 1;
+                carrito.push(producto);
+                }
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    
+}
+
+        </script>
+        
+   
     </body>
 </html>
