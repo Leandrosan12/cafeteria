@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.sec{
+   width: 350px;
+   background-color: rgb(132, 132, 132); 
+   padding: 30px;
+   margin: auto;
+   margin-top: 100px;
+   border-radius: 4px;
+   font-family: 'calibri';
+   color: #fff;
+   box-shadow: 7px 13px 37px #fd7e00;
+}
+
+.sec h1{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.controls{
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+.sec p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+body{
+    background: url(https://thumbs.dreamstime.com/z/patr%C3%B3n-de-caf%C3%A9-sin-costuras-con-iconos-estilo-l%C3%ADnea-fondo-cafeter%C3%ADa-o-217797211.jpg);
+}
+.sec a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.sec a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.sec .boton{
+    width: 100%;
+    background-color: #0051ff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    color: #FFFFFF;
+    margin: 16px 0px;
+    font-size: 16px;
+    transition-duration: 0.5s;
+}
+
+.sec .boton:hover{
+    background-color: #0d3281;
+    color: #FFFFFF;
+    transition-duration: 0.5s;
+}
+
+.form div .alerta {
+    width: 290px;
+    text-align: left;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    font-size: .8rem;
+  }
+  
+  .form > .alerta-error,
+  .form > .alerta-exito {
+    display: none;
+  }
+
+  .alerta-error,
+  .alerta-exito {
+    visibility: hidden;
+  }
+  .form .alertaError {
+    display: block;
+    background-color: #F66060;
+    padding: .5rem 1rem;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: .8rem;
+  }
+  
+  .form .alertaExito {
+    display: block;
+    background-color: #0ca828;
+    padding: .5rem 1rem;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: .8rem;
+  }
+  
+  .form .error {
+    outline: solid 2px #9d2222;
+  }
